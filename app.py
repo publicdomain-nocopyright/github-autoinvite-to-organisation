@@ -76,5 +76,9 @@ def invite():
         return f'Error sending invitation. Status code: {r.status_code}. Response content: {r.content}'
 
 # host='0.0.0.0' is probably required by render.com webservice provider.
+# Maybe allows to run on all addresses at once.
+# Apr 16 03:29:49 PM   * Running on all addresses (0.0.0.0)
+# Apr 16 03:29:49 PM   * Running on http://127.0.0.1:5000
+# Apr 16 03:29:49 PM   * Running on http://10.217.57.115:5000
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
