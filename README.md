@@ -5,11 +5,15 @@
 2. run `python app.py`
 3. visit your app url
 
-To run app locally:   
-  1. set `GITHUB_REDIRECT_URI` in both: **web service** and **Github OAuth App** to:  
-     * `GITHUB_REDIRECT_URI=http://localhost:5000/login/callback`
-  2. run `python app.py`
-  3. visit http://localhost:5000
+To run app locally:
+
+0. Setup **Github OAuth App** and **Personal access tokens (classic)**  
+   1. create Github OAuth App: https://github.com/settings/developers
+   2. create Personal access token (classic): https://github.com/settings/tokens
+1. set `GITHUB_REDIRECT_URI` in both: **web service** and **Github OAuth App** to:  
+   * `GITHUB_REDIRECT_URI=http://localhost:5000/login/callback`
+2. run `python app.py`
+3. visit http://localhost:5000
 ## Set these variables in your webservice's environment
 Do not use `.env` unless your repository/project is completely private.
 ```
