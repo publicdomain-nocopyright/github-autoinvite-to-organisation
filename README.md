@@ -26,7 +26,7 @@ GITHUB_CLIENT_ID=a214e99ec9e3bf2ed040
 GITHUB_CLIENT_SECRET=81cbad67bf8dee358dfd943c4a13c4758f317c5e 
                                            # Github OAuth App Redirect URL (https://yourdomain.tld/login/callback)
 GITHUB_REDIRECT_URI=https://auto-invitation-test.onrender.com/login/callback 
-                                           # Your organisation name as in url https://github.com/publicdomain-nocopyright
+                                           # Your organisation name (as in url https://github.com/publicdomain-nocopyright)
 GITHUB_ORG_NAME=publicdomain-nocopyright
                                            # GitHub Token of an admin of organisation.
                                            # Personal access token must include admin:org scope. Which will allow to create invites to organisation.
