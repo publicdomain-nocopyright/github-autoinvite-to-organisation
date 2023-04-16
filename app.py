@@ -75,5 +75,6 @@ def invite():
     else:
         return f'Error sending invitation. Status code: {r.status_code}. Response content: {r.content}'
 
+# host='0.0.0.0' is probably required by render.com webservice provider.
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
