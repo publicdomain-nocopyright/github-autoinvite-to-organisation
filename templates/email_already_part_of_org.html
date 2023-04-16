@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Organization Membership {{ github_org_name }}</title>
+    <style>
+      /* Set the background color to black */
+      body {
+        background-color: black;
+      }
+
+      /* Create a red square with a white text in the center of the page */
+      #red-square {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border: 5px solid white;
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="red-square">
+      <p>You are already part of this organization</p>
+    </div>
+
+    <script>
+      // Wait 5 seconds and go back to the previous page or redirect to example.com
+      setTimeout(() => {
+        if (history.length > 2) {
+          history.back();
+        } else {
+          window.location.href = 'https://github.com/' + "{{ github_org_name }}";
+        }
+      }, 2000);
+    </script>
+  </body>
+</html>

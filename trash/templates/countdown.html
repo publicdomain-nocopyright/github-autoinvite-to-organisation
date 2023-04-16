@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Countdown</title>
+  </head>
+  <body>
+    <p>Invitation sent! You will be redirected to example.com in <span id="countdown"></span> seconds.</p>
+    <script>
+      var timeLeft = 5; // change this to the desired countdown time in seconds
+      var countdown = setInterval(function() {
+        document.getElementById('countdown').innerHTML = timeLeft;
+        timeLeft -= 1;
+        if (timeLeft < 0) {
+          clearInterval(countdown);
+          window.location.replace("https://github.com/orgs/" + "{{ github_org_name }}" + "/invitation");
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
