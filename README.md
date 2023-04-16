@@ -1,6 +1,6 @@
 0. Setup **Github OAuth App** and **Personal access tokens (classic)**  
    1. create Github OAuth App: https://github.com/settings/developers
-   2. create Personal access tokens (classic): https://github.com/settings/tokens
+   2. create Personal access token (classic): https://github.com/settings/tokens
 1. Set evnironment variables in your webservice's environment
 2. run `python app.py`
 3. visit your app url
