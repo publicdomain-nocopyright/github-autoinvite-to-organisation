@@ -9,11 +9,14 @@ github_client_id = os.getenv('GITHUB_CLIENT_ID')
 github_client_secret = os.getenv('GITHUB_CLIENT_SECRET')
 github_org_name = os.getenv('GITHUB_ORG_NAME')
 github_redirect_uri = os.getenv('GITHUB_REDIRECT_URI')
-print("app.secret_key " + app.secret_key)
-print("github_client_id " + github_client_id)
-print("github_client_secret " + github_client_secret)
-print("github_org_name " + github_org_name)
-print("github_redirect_uri " + github_redirect_uri)
+
+# Quick Debug
+if False:
+    print("app.secret_key " + app.secret_key)
+    print("github_client_id " + github_client_id)
+    print("github_client_secret " + github_client_secret)
+    print("github_org_name " + github_org_name)
+    print("github_redirect_uri " + github_redirect_uri)
 
 @app.route('/')
 def index():
