@@ -1,6 +1,7 @@
 
 1. Set these variables in your webservice's environment
 2. run `python app.py`
+3. visit your app url
 
 ## Set these variables in your webservice's environment
 Do not use `.env` unless your repository/project is completely private.
