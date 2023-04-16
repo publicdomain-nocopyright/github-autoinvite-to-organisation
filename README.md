@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/21064622/232320604-8b5562ed-a88b-4a44-8112-f4b7dae95fd8.png)
+# github-autoinvite-to-organisation
+
 Steps of running.
 
 0. Setup **Github OAuth App** and **Personal access tokens (classic)**  
