@@ -10,6 +10,7 @@ To run app locally:
 0. Setup **Github OAuth App** and **Personal access tokens (classic)**  
    1. create Github OAuth App: https://github.com/settings/developers
    2. create Personal access token (classic): https://github.com/settings/tokens
+0. Set evnironment variables    
 1. set `GITHUB_REDIRECT_URI` in both: **web service** and **Github OAuth App** to:  
    * `GITHUB_REDIRECT_URI=http://localhost:5000/login/callback`
 2. run `python app.py`
